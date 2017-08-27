@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>HandyJSON.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-YoLiWithSwift.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -17,12 +22,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>5DB753D68B61B9677CD85FA0BBC44FB8</key>
+		<key>79C040AFDDCE1BCBF6D8B5EB0B85887F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>79C040AFDDCE1BCBF6D8B5EB0B85887F</key>
+		<key>8EF4419B10653C0EDAEB939CF013D54F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FC398DAA88F6716BDB00EE9D1D650355</key>
 		<dict>
 			<key>primary</key>
 			<true/>
