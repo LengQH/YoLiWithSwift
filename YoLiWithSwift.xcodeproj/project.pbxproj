@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7FDA3938682B2C4309D8B438 /* Pods_YoLiWithSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D8BD217DEAD7668BD223C4F /* Pods_YoLiWithSwift.framework */; };
 		85EA3E4B1F53116E00F005E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EA3E4A1F53116E00F005E3 /* AppDelegate.swift */; };
 		85EA3E4D1F53116E00F005E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EA3E4C1F53116E00F005E3 /* ViewController.swift */; };
 		85EA3E501F53116E00F005E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85EA3E4E1F53116E00F005E3 /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D8BD217DEAD7668BD223C4F /* Pods_YoLiWithSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YoLiWithSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		25ED1087A31E91A914D7E069 /* Pods-YoLiWithSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YoLiWithSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-YoLiWithSwift/Pods-YoLiWithSwift.release.xcconfig"; sourceTree = "<group>"; };
+		7EC1CAC437BCE41457A139E9 /* Pods-YoLiWithSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YoLiWithSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YoLiWithSwift/Pods-YoLiWithSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		85EA3E471F53116E00F005E3 /* YoLiWithSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YoLiWithSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85EA3E4A1F53116E00F005E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		85EA3E4C1F53116E00F005E3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FDA3938682B2C4309D8B438 /* Pods_YoLiWithSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4F0178E48A7B83D209549665 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1D8BD217DEAD7668BD223C4F /* Pods_YoLiWithSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		61F2308556A3511D35135304 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7EC1CAC437BCE41457A139E9 /* Pods-YoLiWithSwift.debug.xcconfig */,
+				25ED1087A31E91A914D7E069 /* Pods-YoLiWithSwift.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		85EA3E3E1F53116E00F005E3 = {
 			isa = PBXGroup;
 			children = (
 				85EA3E491F53116E00F005E3 /* YoLiWithSwift */,
 				85EA3E481F53116E00F005E3 /* Products */,
+				61F2308556A3511D35135304 /* Pods */,
+				4F0178E48A7B83D209549665 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 85EA3E591F53116F00F005E3 /* Build configuration list for PBXNativeTarget "YoLiWithSwift" */;
 			buildPhases = (
+				0DE8A7AD699A766A54D3F245 /* [CP] Check Pods Manifest.lock */,
 				85EA3E431F53116E00F005E3 /* Sources */,
 				85EA3E441F53116E00F005E3 /* Frameworks */,
 				85EA3E451F53116E00F005E3 /* Resources */,
+				C75BF1447A7D425F3E713DB2 /* [CP] Embed Pods Frameworks */,
+				B87F82703D68B95F09BCFBBE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -97,6 +124,7 @@
 					85EA3E461F53116E00F005E3 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 4ETV77S77W;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -131,6 +159,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0DE8A7AD699A766A54D3F245 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B87F82703D68B95F09BCFBBE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YoLiWithSwift/Pods-YoLiWithSwift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C75BF1447A7D425F3E713DB2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YoLiWithSwift/Pods-YoLiWithSwift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		85EA3E431F53116E00F005E3 /* Sources */ = {
@@ -259,10 +335,12 @@
 		};
 		85EA3E5A1F53116F00F005E3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EC1CAC437BCE41457A139E9 /* Pods-YoLiWithSwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4ETV77S77W;
 				INFOPLIST_FILE = YoLiWithSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zkzk.YoLiWithSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -272,10 +350,12 @@
 		};
 		85EA3E5B1F53116F00F005E3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25ED1087A31E91A914D7E069 /* Pods-YoLiWithSwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4ETV77S77W;
 				INFOPLIST_FILE = YoLiWithSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zkzk.YoLiWithSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -302,6 +382,7 @@
 				85EA3E5B1F53116F00F005E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
