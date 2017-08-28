@@ -27,20 +27,6 @@ let sendSMSWithAgain        = 59       //  发送验证码的秒数
 let updateTimestampNeedTime = 60*10    //  10分钟更新一次时间戳
 
 
-let loginWithQQID            = "1105686577"                           //  QQ的AppID
-let loginWithQQKey           = "uVPruLNrtgkOXHUg"                     //  QQ的AppKey
-
-let WeChatStateValue         = "110"
-let loginWithWeChatAppID     = "wx855e35896cfc6126"                   //  微信AppID
-let loginWithWeChatAppSecret = "e93628131b773a7fd83406eb67d4647e"     //  微信AppSecret
-let TencentWeChatID          = "com.tencent.xin"
-let TencentWeChatGetTokenUrl = "https://api.weixin.qq.com/sns/oauth2/access_token?"  // 用来请求微信access_token的地址
-
-let sinaWeiBoAppID           = "1179358517"                        //  新浪微博 AppID
-let sinaWeiBoAppKey          = "3110775450"                        //  新浪微博 AppKey
-let sinaAppSecret            = "8020aa2058ff90f4090b25bff244fae0"  //  新浪微博 AppSecret
-let sinaBackUrl              = "http://www.zkzk365.com"            //  新浪微博回调地址(具体看开放平台中的高级信息中的授权回调页)
-
 let loadBaiDuUrl             = "www.baidu.com"
 
 
