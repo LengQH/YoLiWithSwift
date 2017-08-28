@@ -5,4 +5,5 @@ use_frameworks!
 target 'YoLiWithSwift' do
     pod 'Alamofire', '~> 4.0.1'
     pod 'HandyJSON'
+    
 end
